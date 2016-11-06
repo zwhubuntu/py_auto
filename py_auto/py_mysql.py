@@ -1,11 +1,11 @@
 import xlrd, MySQLdb, time
-book = xlrd.open_workbook('test.xlsx')
+book = xlrd.open_workbook('D:\Program Files\python27\Project\hello\py_auto\\test.xlsx')
 sheet = book.sheet_by_name('Sheet1')
 
 ISOTIMEFORMAT="%Y-%m-%d %X"
 
 
-database = MySQLdb.Connect(host = "localhost", user = "root", passwd = "root", db = "pythontest")
+database = MySQLdb.Connect(host="localhost", user="root", passwd="root", db="pythontest")
 
 cursor = database.cursor()
 
